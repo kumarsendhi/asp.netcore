@@ -1,0 +1,9 @@
+C:\Kumar\OdeToFood\OdeToFood\bin\Debug\netcoreapp1.1\OdeToFood.deps.json
+C:\Kumar\OdeToFood\OdeToFood\bin\Debug\netcoreapp1.1\OdeToFood.runtimeconfig.json
+C:\Kumar\OdeToFood\OdeToFood\bin\Debug\netcoreapp1.1\OdeToFood.runtimeconfig.dev.json
+C:\Kumar\OdeToFood\OdeToFood\bin\Debug\netcoreapp1.1\OdeToFood.dll
+C:\Kumar\OdeToFood\OdeToFood\bin\Debug\netcoreapp1.1\OdeToFood.pdb
+C:\Kumar\OdeToFood\OdeToFood\obj\Debug\netcoreapp1.1\OdeToFood.csprojResolveAssemblyReference.cache
+C:\Kumar\OdeToFood\OdeToFood\obj\Debug\netcoreapp1.1\OdeToFood.AssemblyInfo.cs
+C:\Kumar\OdeToFood\OdeToFood\obj\Debug\netcoreapp1.1\OdeToFood.dll
+C:\Kumar\OdeToFood\OdeToFood\obj\Debug\netcoreapp1.1\OdeToFood.pdb
