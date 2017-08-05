@@ -1,0 +1,32 @@
+﻿@model otf.ViewModels.HomePageViewModel
+
+@{ 
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Hello from a view!</h1>
+<div>This is the home page</div>
+<h1>Welcome!</h1>
+
+<table>
+    @foreach (var restaurant in Model.Restaurants)
+    {
+        <tr>
+            @*<td>@restaurant.Id</td>*@
+            <td>
+                <a href="/home/details/@restaurant.Id">Details</a>
+                @Html.ActionLink("View", "Details", new { id = restaurant.Id })
+            </td>
+            <td>@restaurant.Name</td>
+        </tr>
+
+    }
+
+</table>
+
+@section footer{
+<h3>@Model.CurrentMessage</h3>
+}
+

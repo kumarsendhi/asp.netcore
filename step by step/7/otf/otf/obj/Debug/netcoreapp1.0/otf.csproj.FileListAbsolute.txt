@@ -1,0 +1,9 @@
+C:\Kumar\otf\otf\bin\Debug\netcoreapp1.0\otf.deps.json
+C:\Kumar\otf\otf\bin\Debug\netcoreapp1.0\otf.runtimeconfig.json
+C:\Kumar\otf\otf\bin\Debug\netcoreapp1.0\otf.runtimeconfig.dev.json
+C:\Kumar\otf\otf\bin\Debug\netcoreapp1.0\otf.dll
+C:\Kumar\otf\otf\bin\Debug\netcoreapp1.0\otf.pdb
+C:\Kumar\otf\otf\obj\Debug\netcoreapp1.0\otf.csprojResolveAssemblyReference.cache
+C:\Kumar\otf\otf\obj\Debug\netcoreapp1.0\otf.AssemblyInfo.cs
+C:\Kumar\otf\otf\obj\Debug\netcoreapp1.0\otf.dll
+C:\Kumar\otf\otf\obj\Debug\netcoreapp1.0\otf.pdb
