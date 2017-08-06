@@ -1,0 +1,27 @@
+﻿@model otf.ViewModels.HomePageViewModel
+
+@{
+    ViewBag.Title = "Home";
+
+}
+
+
+<h1>Hello from a view!</h1>
+<div>This is the home page</div>
+<h1>Welcome!</h1>
+
+@foreach (var restaurant in Model.Restaurants)
+{
+    @Html.Partial("_Summary", restaurant)
+}
+
+
+<div>
+    <a asp-controller="Home" asp-action="Create">Create</a>
+</div>
+
+
+@section footer{
+    <h3>@Model.CurrentMessage</h3>
+}
+

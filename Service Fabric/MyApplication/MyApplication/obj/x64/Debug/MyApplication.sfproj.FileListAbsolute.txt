@@ -1,1 +1,2 @@
 C:\Kumar\Service Fabric\MyApplication\MyApplication\obj\x64\Debug\MyApplication.sfprojResolveAssemblyReference.cache
+E:\aspcore\Service Fabric\MyApplication\MyApplication\obj\x64\Debug\MyApplication.sfprojResolveAssemblyReference.cache

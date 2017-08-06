@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Services.Runtime;
 
-namespace MyWebApiFrontEnd
+namespace MyWebAPIFrontEnd
 {
-    [EventSource(Name = "MyCompany-MyApplication-MyWebApiFrontEnd")]
+    [EventSource(Name = "MyCompany-MyApplication-MyWebAPIFrontEnd")]
     internal sealed class ServiceEventSource : EventSource
     {
         public static readonly ServiceEventSource Current = new ServiceEventSource();

@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace MyWebApiFrontEnd
+namespace MyWebAPIFrontEnd
 {
     internal static class Program
     {
@@ -20,10 +20,10 @@ namespace MyWebApiFrontEnd
                 // When Service Fabric creates an instance of this service type,
                 // an instance of the class is created in this host process.
 
-                ServiceRuntime.RegisterServiceAsync("MyWebApiFrontEndType",
-                    context => new MyWebApiFrontEnd(context)).GetAwaiter().GetResult();
+                ServiceRuntime.RegisterServiceAsync("MyWebAPIFrontEndType",
+                    context => new MyWebAPIFrontEnd(context)).GetAwaiter().GetResult();
 
-                ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(MyWebApiFrontEnd).Name);
+                ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(MyWebAPIFrontEnd).Name);
 
                 // Prevents this host process from terminating so services keeps running. 
                 Thread.Sleep(Timeout.Infinite);

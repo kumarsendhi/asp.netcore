@@ -11,14 +11,14 @@ using Microsoft.ServiceFabric.Services.Communication.AspNetCore;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
 using Microsoft.ServiceFabric.Services.Runtime;
 
-namespace MyWebApiFrontEnd
+namespace MyWebAPIFrontEnd
 {
     /// <summary>
     /// The FabricRuntime creates an instance of this class for each service type instance. 
     /// </summary>
-    internal sealed class MyWebApiFrontEnd : StatelessService
+    internal sealed class MyWebAPIFrontEnd : StatelessService
     {
-        public MyWebApiFrontEnd(StatelessServiceContext context)
+        public MyWebAPIFrontEnd(StatelessServiceContext context)
             : base(context)
         { }
 
@@ -31,7 +31,7 @@ namespace MyWebApiFrontEnd
             return new ServiceInstanceListener[]
             {
                 new ServiceInstanceListener(serviceContext =>
-                    new WebListenerCommunicationListener(serviceContext, "ServiceEndpoint", url =>
+                    new WebListenerCommunicationListener(serviceContext, "ServiceEndpoint", (url, listener) =>
                     {
                         ServiceEventSource.Current.ServiceMessage(serviceContext, $"Starting WebListener on {url}");
 
@@ -42,6 +42,7 @@ namespace MyWebApiFrontEnd
                                     .UseContentRoot(Directory.GetCurrentDirectory())
                                     .UseStartup<Startup>()
                                     .UseApplicationInsights()
+                                    .UseServiceFabricIntegration(listener, ServiceFabricIntegrationOptions.None)
                                     .UseUrls(url)
                                     .Build();
                     }))
